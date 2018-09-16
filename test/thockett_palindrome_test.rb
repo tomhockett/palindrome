@@ -1,11 +1,24 @@
-require "test_helper"
+require 'test_helper'
 
+# This comment serves only to make Rubocop happy.
 class ThockettPalindromeTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::ThockettPalindrome::VERSION
+  def test_for_non_palindrome
+    assert !'apple'.palindrome?
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_for_plain_palindrome
+    assert 'racecar'.palindrome?
+  end
+
+  def test_mixed_case_palindrome
+    assert 'RaceCar'.palindrome?
+  end
+
+  def test_palindrome_with_punctuation
+    assert "Madam, I'm Adam".palindrome?
+  end
+
+  def test_letters
+    assert_equal "Madam, I'm Adam.".letters, "MadamImAdam"
   end
 end
