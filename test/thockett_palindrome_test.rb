@@ -17,8 +17,4 @@ class ThockettPalindromeTest < Minitest::Test
   def test_palindrome_with_punctuation
     assert "Madam, I'm Adam".palindrome?
   end
-
-  def test_letters
-    assert_equal "Madam, I'm Adam.".letters, "MadamImAdam"
-  end
 end
