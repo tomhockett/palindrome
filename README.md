@@ -1,6 +1,6 @@
 # Palindrome detector
 
-`thockett_palindrome` is a sample Ruby gem created in [_Learn Enough Ruby to Be Dangerous_](https://www.learnenough.com/ruby-tutorial) by Michael Hartl.
+A gem to test the palindrome-ness of a string or integer.
 
 ## Installation
 
